@@ -397,6 +397,8 @@ def main():
         
         # Auswahl und Umbenennung der Spalten für die Tabelle
         display_df = df_gap.copy()
+        if "Predicted_Gap" in display_df.columns:
+            display_df = display_df.sort_values(by="Predicted_Gap", ascending=False)
         cols_to_show = {
             "NAME": "Gebiet",
             "Elektro": "Ist-Bestand Elektro",
