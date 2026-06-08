@@ -63,4 +63,4 @@ dashboard/
 
 ## Author
 
-Adrian Thürig – MAS Data Science, ZHAW
+Adrian Thürig – MAS Data Science, FFHS
