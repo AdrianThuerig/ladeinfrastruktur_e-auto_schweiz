@@ -46,7 +46,7 @@ def main():
         # Upgrade pip first
         subprocess.run([venv_python, "-m", "pip", "install", "--upgrade", "pip"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         # Install requirements
-        subprocess.run([venv_pip, "install", "-r", "requirements.txt"], check=True)
+        subprocess.run([venv_python, "-m", "pip", "install", "-r", "requirements.txt"], check=True)
         print("Dependencies verified successfully.")
     except subprocess.CalledProcessError as e:
         print(f"Warning/Error during dependency installation: {e}")
