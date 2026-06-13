@@ -28,16 +28,6 @@ def load_bfe_data(filepath: str):
     return gpd.GeoDataFrame()
 
 
-def load_bfs_data(filepath: str):
-    """Lädt die BFS-Gemeindedaten (Geodaten) aus Parquet."""
-    if os.path.exists(filepath):
-        try:
-            return gpd.read_parquet(filepath)
-        except Exception as e:
-            print(f"Fehler beim Laden von {filepath}: {e}")
-    return gpd.GeoDataFrame()
-
-
 def load_boundary_data():
     """Lädt die optimierten SwissBOUNDARIES3D Gemeindedaten."""
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
