@@ -43,9 +43,11 @@ dashboard/
 ├── start.command           # macOS/Linux double-clickable launcher
 ├── start.bat               # Windows double-clickable launcher
 ├── requirements.txt        # Python dependencies
-├── data/                   # Raw data
-│   ├── BEST.txt            # ASTRA vehicle fleet data
-│   └── *.json              # BFE charging stations data
+├── data/                   # Optimierte Daten im Parquet-Format
+│   ├── AMTOVZ_CSV_LV95.parquet # PLZ-Lookup-Tabelle
+│   ├── BEST.parquet            # ASTRA Fahrzeugbestand
+│   ├── ch.bfe.ladestellen-elektromobilitaet.parquet # BFE Ladestellen
+│   └── swissboundaries.parquet # BFS Gemeindegrenzen
 └── src/                    # Source code
     ├── data_loader.py      # Data loading functions
     ├── pipeline.py         # ETL pipeline
