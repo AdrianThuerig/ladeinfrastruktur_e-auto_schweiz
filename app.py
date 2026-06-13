@@ -12,8 +12,7 @@ import pandas as pd
 import geopandas as gpd
 
 # Eigene Module importieren
-# Eigene Module importieren
-from src.data_loader import load_astra_data, load_bfe_data, load_bfs_data, load_boundary_data, load_amtovz_data
+from src.data_loader import load_astra_data, load_bfe_data, load_boundary_data, load_amtovz_data
 from src.pipeline import DataPipeline
 from src.forecaster import GapForecaster
 from src.visualizations.plots import InvestmentHeatmapPlot, GrowthOverTimePlot, EngineDistributionPlot
